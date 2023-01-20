@@ -1,0 +1,27 @@
+{
+  "name": "copenhagen_theme",
+  "version": "1.0.0",
+  "repository": "git@github.com:zendesk/copenhagen_theme.git",
+  "scripts": {
+    "prepare": "husky install",
+    "download-locales": "node ./bin/update-translations"
+  },
+  "dependencies": {
+    "node-fetch": "2.6.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.3.0",
+    "@commitlint/config-conventional": "17.3.0",
+    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "husky": "8.0.2",
+    "js-yaml": "4.1.0",
+    "semantic-release": "19.0.5"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
